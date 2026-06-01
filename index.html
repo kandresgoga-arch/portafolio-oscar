@@ -970,7 +970,7 @@
 
     /* ── LIBROS ── */
     const books = [
-      { num:"01", title:"Pedagogía y Educación", file:"articles/libro-01.pdf" },
+      { num:"01", title:"Título libro 01", file:"https://drive.google.com/drive/folders/1hwwJgggZt9xj-PN_lY-uC-IuTxZHV6wW?usp=sharing" },
       { num:"02", title:"Cifras y realidades sobre condiciones laborales de los profesores catedraticos de la Universidad del Tolima y las universidades pulicas Colombianas", file:"articles/libro-02.pdf" },
       /* Agrega más libros aquí ↓ */
     ];
@@ -998,8 +998,8 @@
             <div class="article-title">${a.title}</div>
             <div class="article-file">📄 ${a.file.split('/').pop()}</div>
             <div class="article-btns">
-              <button class="btn-read" onclick="readPDF('${a.file}','${a.title}')">👁 Leer</button>
-              <a class="btn-download" href="${a.file}" download>⬇ Descargar</a>
+              <a class="btn-read" href="${a.file}" target="_blank" style="text-decoration:none;">👁 Leer</a>
+              <a class="btn-download" href="${a.file}" target="_blank" style="text-decoration:none;">⬇ Descargar</a>
             </div>
           </div>`;
       });
